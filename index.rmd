@@ -1,0 +1,11 @@
+---
+title: "Kelly Wang, kzw2102"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: flatly
+---
+
+## Life of Kelly Wang (or at least part of it)
+
