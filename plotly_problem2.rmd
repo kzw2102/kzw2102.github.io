@@ -7,3 +7,28 @@ output:
 ---
 
 My name is Kelly and I am a second year Master of Public Health student at Columbia University's Mailman School of Public Health in the department. I am learning to make websites with _interactive graphics_!!
+
+## Heres some plots 
+```{r}
+library(tidyverse)
+library(viridis)
+library(p8105.datasets)
+
+library(plotly)
+```
+
+```{r}
+data(rest_inspec)
+#tidy
+rest_inspec_tidy=
+  rest_inspec %>% 
+  mutate()
+```
+
+```{r}
+rest_inspec_tidy %>% 
+  plot_ly(x=~lat, y=~long, type="scatter", mode = "markers")
+```
+
+
+#filter by Manhattan restaurants
