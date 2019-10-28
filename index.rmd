@@ -9,3 +9,9 @@ output:
 
 ## Life of Kelly Wang (or at least part of it)
 
+## this is me!
+![](images/Kelly.Wang copy.JPG)
+
+## Linkedin link
+
+Here is my [linkedin](https://www.linkedin.com/in/kellyzwang/) profile. 
