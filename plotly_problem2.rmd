@@ -1,0 +1,9 @@
+---
+title: "Problem 2 Plotly"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+My name is Kelly and I am a second year Master of Public Health student at Columbia University's Mailman School of Public Health in the department. I am learning to make websites with _interactive graphics_!!

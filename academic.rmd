@@ -4,7 +4,12 @@ output:
   html_document:
     toc: true
     toc_float: true
-    theme: flatly
 ---
 
 I am a second year Master of Public Health student at Columbia University's Mailman School of Public Health in the department. 
+
+Here is my [linkedin](https://www.linkedin.com/in/kellyzwang/) **profile** that is also up on the dashboard on the top of the page.
+
+Here is my resume:
+
+![Resume](files/Fall2019_CareerFair_Resume_KellyWang.pdf) 

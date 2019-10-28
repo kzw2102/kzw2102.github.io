@@ -4,7 +4,6 @@ output:
   html_document:
     toc: true
     toc_float: true
-    theme: flatly
 ---
 
 ## Life of Kelly Wang (or at least part of it)
@@ -13,10 +12,6 @@ output:
 
 ![](images/Kelly.Wang copy.JPG)
 
-## Academic and professional Page
+## Academic and Professional Page
 
 You can see my resume and other professional experiences [here](academic.html)
-
-### Linkedin link
-
-Here is my [linkedin](https://www.linkedin.com/in/kellyzwang/) **profile**. 

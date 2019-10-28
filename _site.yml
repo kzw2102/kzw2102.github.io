@@ -1,0 +1,17 @@
+name: "Yay internet!"
+output_dir: "."
+navbar:
+  title: "Home"
+  right:
+    - text: "Academic and Professional Experiences"
+      href: academic.html
+    - icon: fa-envelope fa-lg
+      href: mailto:<kellyzwang@gmail.com>
+    - icon: fa-github fa-lg 
+      href: http://github.com/kzw2102/
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/kellyzwang/
+output:
+  html_document:
+    theme: flatly
+    
