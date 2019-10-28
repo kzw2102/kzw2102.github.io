@@ -9,11 +9,14 @@ output:
 
 ## Life of Kelly Wang (or at least part of it)
 
-## this is me!
+## Here I Am!
+
 ![](images/Kelly.Wang copy.JPG)
 
 ## Academic and professional Page
 
-## Linkedin link
+You can see my resume and other professional experiences [here](academic.html)
 
-Here is my [linkedin](https://www.linkedin.com/in/kellyzwang/) profile. 
+### Linkedin link
+
+Here is my [linkedin](https://www.linkedin.com/in/kellyzwang/) **profile**. 

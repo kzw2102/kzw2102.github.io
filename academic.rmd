@@ -1,0 +1,10 @@
+---
+title: "Kelly Wang: Academic Profile"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: flatly
+---
+
+I am a second year Master of Public Health student at Columbia University's Mailman School of Public Health in the department. 
