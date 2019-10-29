@@ -19,22 +19,64 @@ library(plotly)
 
 ```{r}
 data(rest_inspec)
+
 #tidy
 rest_inspec_tidy=
   rest_inspec %>% 
   select(
-    boro, zipcode, dba, cuisine_description, building, grade
+    boro, zipcode, dba, cuisine_description, building, grade, score
   ) %>% 
   filter(
     !is.na(grade),
     cuisine_description== c("Korean", "Chinese", "American", "Donuts")
   )
 ```
-
+# line plot 
 ```{r}
 rest_inspec_tidy %>% 
-  plot_ly(y=~grade, color = ~boro, type="box", colors="set2")
+  plot_ly(x=~score, y=~boro, type="scatter", mode="markers", color=~grade, alpha=0.5 )
 ```
 
 
 #filter by Manhattan restaurants
+
+plotly bar chart by food category in manhattan
+```{r}
+rest_inspec_tidy%>% 
+  filter(boro=="MANHATTAN") %>% 
+  count(cuisine_description) %>% 
+  mutate(cuisine_description = fct_reorder(cuisine_description, n)) %>% 
+  plot_ly(x= ~cuisine_description, y= ~n, color = ~cuisine_description, type="bar")
+```
+We can see here that among the 4 cuisine categories, American is the most popular in Manhattan. 
+
+# box plots
+* distribution by grade per cuisine category
+```{r}
+box_ggplot=
+  rest_inspec_tidy%>% 
+  mutate(grade = fct_reorder(grade, score)) %>% 
+  ggplot(aes(x=grade, y=score, fill= cuisine_description)) +
+  geom_boxplot()+
+  theme_classic () +
+  theme(axis.text.x = element_text(angle=90, hjust=1))
+
+ggplotly(box_ggplot)
+```
+
+# scatterplots  - this doesn't work debug later
+```{r}
+##scatter_ggplot=
+  ##rest_inspec_tidy %>% 
+  ##count(grade) %>% 
+  ##mutate(grade = fct_reorder(grade, n)) %>% 
+  ##ggplot(aes(x= cuisine_description, y= grade))+
+  ##geom_point(alpha=0.25)+
+  ##scale_color_viridis() +
+  ##coord_cartesian() +
+ ## theme_classic()
+
+##ggplotly(scatter_ggplot)
+```
+
+

@@ -8,10 +8,13 @@ output:
 
 ## Life of Kelly Wang (or at least part of it)
 
-## Here I Am!
 
 ![](images/Kelly.Wang copy.JPG)
 
-## Academic and Professional Page
+I am a second year Master of Public Health student at Columbia University's Mailman School of Public Health in the biostatistics department. 
+
+Here is my [linkedin](https://www.linkedin.com/in/kellyzwang/) **profile** that is also up on the dashboard on the top of the page.
 
 You can see my resume and other professional experiences [here](academic.html)
+
+If you are interested about *fun facts* about me, you can access it [here](about.html)
