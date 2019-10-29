@@ -42,7 +42,9 @@ rest_inspec_tidy=
 
 ```{r}
 rest_inspec_tidy %>% 
-  plot_ly(x=~score, y=~boro, type="scatter", mode="markers", color=~grade, alpha=0.5 )
+  plot_ly(x=~score, y=~boro, type="scatter", mode="markers", color=~cuisine_description, alpha=0.5 ) %>% 
+  layout(title="Scatter of Score by Borough by Cuisine ",
+         xaxis= list(title="Score"), yaxis=list(title="Borough"))
 
 ```
 
