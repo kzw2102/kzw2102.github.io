@@ -6,7 +6,7 @@ output:
     toc_float: true
 ---
 
-I am a second year Master of Public Health student at Columbia University's Mailman School of Public Health in the department. 
+I am a second year Master of Public Health student at Columbia University's Mailman School of Public Health in the biostatistics department. 
 
 Here is my [linkedin](https://www.linkedin.com/in/kellyzwang/) **profile** that is also up on the dashboard on the top of the page.
 

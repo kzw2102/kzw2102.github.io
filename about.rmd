@@ -6,7 +6,7 @@ output:
     toc_float: true
 ---
 ## Current Academic Standing 
-I am a second year Master of Public Health student at Columbia University's Mailman School of Public Health in the department. 
+I am a second year Master of Public Health student at Columbia University's Mailman School of Public Health in the biostatistics department. 
 
 ## What do I do during my free time 
 
@@ -28,7 +28,7 @@ You can access my goodreads profile [here](https://www.goodreads.com/user/show/8
 
 ### Bullet Journaling
 
-I am a very crafty person and thoroughly enjoy bullet journaling. HEre are some of my spreads that I'm quite content with.
+I am a very crafty person and thoroughly enjoy bullet journaling. Here are some of my spreads that I'm quite content with.
 
 ![](images/bujo1.JPG)
 ![](images/bujo2.JPG)

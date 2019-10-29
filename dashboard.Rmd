@@ -1,23 +1,20 @@
 ---
-title: "Problem 2 Plotly"
+title: "Problem 2 Dashboard"
 output: 
-  html_document:
-    cold_folding: hide
-    toc: true
-    toc_float: true
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
 ---
 
-My name is Kelly and I am a second year Master of Public Health student at Columbia University's Mailman School of Public Health in the department. I am learning to make websites with _interactive graphics_!!
+```{r setup, include=FALSE}
+library(flexdashboard)
 
-## Heres some plots 
-```{r}
 library(tidyverse)
 library(viridis)
 library(p8105.datasets)
 
 library(plotly)
 ```
-
 ```{r}
 data(rest_inspec)
 
@@ -37,18 +34,24 @@ rest_inspec_tidy=
     grade=fct_relevel(grade, c("A", "B", "C", "Not Yet Graded"))
   )
 ```
-# scatter plot 
+```
 
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
 
 ```{r}
 rest_inspec_tidy %>% 
   plot_ly(x=~score, y=~boro, type="scatter", mode="markers", color=~grade, alpha=0.5 )
-
+  
 ```
 
+Column {data-width=350}
+-----------------------------------------------------------------------
 
-## Bar Chart 
-plotly bar chart by food category in manhattan
+### Chart B
+
 ```{r}
 rest_inspec_tidy%>% 
   filter(boro=="MANHATTAN") %>% 
@@ -56,10 +59,9 @@ rest_inspec_tidy%>%
   mutate(cuisine_description = fct_reorder(cuisine_description, n)) %>% 
   plot_ly(x= ~cuisine_description, y= ~n, color = ~cuisine_description, type="bar")
 ```
-We can see here that among the 4 cuisine categories, American is the most popular in Manhattan. 
 
-# box plots
-* distribution by grade per cuisine category
+### Chart C
+
 ```{r}
 box_ggplot=
   rest_inspec_tidy%>% 
@@ -71,6 +73,4 @@ box_ggplot=
 
 ggplotly(box_ggplot)
 ```
-
-
 

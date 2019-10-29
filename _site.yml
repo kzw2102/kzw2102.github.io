@@ -1,4 +1,4 @@
-name: "Yay internet!"
+name: "YML"
 output_dir: "."
 navbar:
   title: "Home"
@@ -12,7 +12,10 @@ navbar:
     - icon: fa-linkedin fa-lg
       href: https://www.linkedin.com/in/kellyzwang/
     - text: "Problem 2"
-      href: ploty_problem2.html
+      href: plotly_problem2.html
+    - text: "dashboard"
+      href: dashboard.html
+      
 output:
   html_document:
     theme: flatly
