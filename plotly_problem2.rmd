@@ -22,12 +22,18 @@ data(rest_inspec)
 #tidy
 rest_inspec_tidy=
   rest_inspec %>% 
-  mutate()
+  select(
+    boro, zipcode, dba, cuisine_description, building, grade
+  ) %>% 
+  filter(
+    !is.na(grade),
+    cuisine_description== c("Korean", "Chinese", "American", "Donuts")
+  )
 ```
 
 ```{r}
 rest_inspec_tidy %>% 
-  plot_ly(x=~lat, y=~long, type="scatter", mode = "markers")
+  plot_ly(y=~grade, color = ~boro, type="box", colors="set2")
 ```
 
 
