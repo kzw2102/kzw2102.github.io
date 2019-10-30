@@ -40,7 +40,7 @@ rest_inspec_tidy=
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
+### Chart A: Scatter of Score by Zipcode by Borough
 
 ```{r}
 rest_inspec_tidy %>% 
@@ -48,25 +48,23 @@ rest_inspec_tidy %>%
     cuisine_description=="Chinese"
   ) %>% 
   plot_ly(x=~score, y=~zipcode, type="scatter", mode="markers", color=~boro, alpha=0.5 ) %>%
-  layout(title="Scatter of Score by Zipcode by Borough ",
-         xaxis= list(title="Score"), yaxis=list(title="Zipcode"))
+  layout(xaxis= list(title="Score"), yaxis=list(title="Zipcode"))
 ```
 
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Chart B:Number of Restaurants per Kelly's Favorite Food Categories in Manhattan 
 
 ```{r}
 rest_inspec_tidy%>% 
   filter(boro=="MANHATTAN") %>% 
   count(cuisine_description) %>% 
   mutate(cuisine_description = fct_reorder(cuisine_description, n)) %>% 
-  plot_ly(x= ~cuisine_description, y= ~n, color = ~cuisine_description, type="bar") %>% layout(title="Number of Restaurants per Kelly's Favorite Food Categories in Manhattan ",
-         xaxis= list(title="Cuisine Description"), yaxis=list(title="Count"))
+  plot_ly(x= ~cuisine_description, y= ~n, color = ~cuisine_description, type="bar") %>% layout(xaxis= list(title="Cuisine Description"), yaxis=list(title="Count"))
 ```
 
-### Chart C
+### Chart C:Distribution of Grade and Score per Cuisine Category in NYC
 
 ```{r}
 box_ggplot=
@@ -74,7 +72,7 @@ box_ggplot=
   mutate(grade = fct_reorder(grade, score)) %>% 
   plot_ly(x=~grade, y=~score, color=~cuisine_description, type = "box")%>% 
   layout(boxmode = "group") %>% 
-  layout(title = "Distribution of Grade and Score per Cuisine Category in NYC", xaxis=list(title="Restaurant Grade"), yaxis=list(title="Score"))
+  layout(xaxis=list(title="Restaurant Grade"), yaxis=list(title="Score"))
 
 ggplotly(box_ggplot)
 ```
