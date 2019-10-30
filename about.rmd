@@ -6,7 +6,7 @@ output:
     toc_float: true
 ---
 ## Current Academic Standing 
-I am a second year Master of Public Health student at Columbia University's Mailman School of Public Health in the biostatistics department. 
+I am a second year Master of Public Health student at Columbia University's Mailman School of Public Health in the biostatistics department. I recieved a BS in Health: Science, Society, and Policy from [Brandeis University](http://brandeis.edu) in December of 2017. 
 
 ## What do I do during my free time 
 

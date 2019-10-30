@@ -4,6 +4,7 @@ output:
   flexdashboard::flex_dashboard:
     orientation: columns
     vertical_layout: fill
+    theme: journal
 ---
 
 ```{r setup, include=FALSE}
@@ -42,11 +43,13 @@ Column {data-width=650}
 ### Chart A
 
 ```{r}
-rest_inspec_tidy%>% 
-  filter(boro=="MANHATTAN") %>% 
-  count(cuisine_description) %>% 
-  mutate(cuisine_description = fct_reorder(cuisine_description, n)) %>% 
-  plot_ly(x= ~cuisine_description, y= ~n, color = ~cuisine_description, type="bar")
+rest_inspec_tidy %>% 
+  filter(
+    cuisine_description=="Chinese"
+  ) %>% 
+  plot_ly(x=~score, y=~zipcode, type="scatter", mode="markers", color=~boro, alpha=0.5 ) %>%
+  layout(title="Scatter of Score by Zipcode by Borough ",
+         xaxis= list(title="Score"), yaxis=list(title="Zipcode"))
 ```
 
 Column {data-width=350}
@@ -59,7 +62,8 @@ rest_inspec_tidy%>%
   filter(boro=="MANHATTAN") %>% 
   count(cuisine_description) %>% 
   mutate(cuisine_description = fct_reorder(cuisine_description, n)) %>% 
-  plot_ly(x= ~cuisine_description, y= ~n, color = ~cuisine_description, type="bar")
+  plot_ly(x= ~cuisine_description, y= ~n, color = ~cuisine_description, type="bar") %>% layout(title="Number of Restaurants per Kelly's Favorite Food Categories in Manhattan ",
+         xaxis= list(title="Cuisine Description"), yaxis=list(title="Count"))
 ```
 
 ### Chart C
@@ -68,10 +72,9 @@ rest_inspec_tidy%>%
 box_ggplot=
   rest_inspec_tidy%>% 
   mutate(grade = fct_reorder(grade, score)) %>% 
-  ggplot(aes(x=grade, y=score, fill= cuisine_description)) +
-  geom_boxplot()+
-  theme_classic () +
-  theme(axis.text.x = element_text(angle=90, hjust=1))
+  plot_ly(x=~grade, y=~score, color=~cuisine_description, type = "box")%>% 
+  layout(boxmode = "group") %>% 
+  layout(title = "Distribution of Grade and Score per Cuisine Category in NYC", xaxis=list(title="Restaurant Grade"), yaxis=list(title="Score"))
 
 ggplotly(box_ggplot)
 ```

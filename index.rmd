@@ -8,10 +8,9 @@ output:
 
 ## Life of Kelly Wang (or at least part of it)
 
+<br><img src="images/Kelly.Wang copy.JPG" alt="Kelly" style="width:65%; border:10px solid"> <br>
 
-![](images/Kelly.Wang copy.JPG)
-
-I am a second year Master of Public Health student at Columbia University's Mailman School of Public Health in the biostatistics department. 
+I am a second year Master of Public Health student at Columbia University's Mailman School of Public Health in the Biostatistics department. 
 
 Here is my [linkedin](https://www.linkedin.com/in/kellyzwang/) **profile** that is also up on the dashboard on the top of the page.
 

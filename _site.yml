@@ -11,12 +11,12 @@ navbar:
       href: http://github.com/kzw2102/
     - icon: fa-linkedin fa-lg
       href: https://www.linkedin.com/in/kellyzwang/
-    - text: "Problem 2"
+    - text: "Plotly"
       href: plotly_problem2.html
     - text: "dashboard"
       href: dashboard.html
       
 output:
   html_document:
-    theme: flatly
+    theme: journal
     
