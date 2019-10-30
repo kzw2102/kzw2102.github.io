@@ -42,9 +42,11 @@ Column {data-width=650}
 ### Chart A
 
 ```{r}
-rest_inspec_tidy %>% 
-  plot_ly(x=~score, y=~boro, type="scatter", mode="markers", color=~grade, alpha=0.5 )
-  
+rest_inspec_tidy%>% 
+  filter(boro=="MANHATTAN") %>% 
+  count(cuisine_description) %>% 
+  mutate(cuisine_description = fct_reorder(cuisine_description, n)) %>% 
+  plot_ly(x= ~cuisine_description, y= ~n, color = ~cuisine_description, type="bar")
 ```
 
 Column {data-width=350}

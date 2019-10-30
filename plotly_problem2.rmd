@@ -1,5 +1,5 @@
 ---
-title: "Problem 2 Plotly"
+title: "Problem 2: Plotly"
 output: 
   html_document:
     cold_folding: hide
@@ -7,7 +7,7 @@ output:
     toc_float: true
 ---
 
-My name is Kelly and I am a second year Master of Public Health student at Columbia University's Mailman School of Public Health in the department. I am learning to make websites with _interactive graphics_!!
+My name is Kelly and I am a second year Master of Public Health student at Columbia University's Mailman School of Public Health in the department of Biostatistics. I am learning to make websites with _interactive graphics_!!
 
 ## Heres some plots 
 ```{r}
@@ -37,42 +37,46 @@ rest_inspec_tidy=
     grade=fct_relevel(grade, c("A", "B", "C", "Not Yet Graded"))
   )
 ```
-# scatter plot 
+# Scatterplot 
 
-
+I'm curious, how many Chinese Restaurants are in NYC and what is the distribution of scores  by zipcode stratified by borough?
 ```{r}
 rest_inspec_tidy %>% 
-  plot_ly(x=~score, y=~boro, type="scatter", mode="markers", color=~cuisine_description, alpha=0.5 ) %>% 
-  layout(title="Scatter of Score by Borough by Cuisine ",
-         xaxis= list(title="Score"), yaxis=list(title="Borough"))
+  filter(
+    cuisine_description=="Chinese"
+  ) %>% 
+  plot_ly(x=~score, y=~zipcode, type="scatter", mode="markers", color=~boro, alpha=0.5 ) %>%
+  layout(title="Scatter of Score by Zipcode by Borough ",
+         xaxis= list(title="Score"), yaxis=list(title="Zipcode"))
 
 ```
-
+We can see here that based off of zipcode, it would make sense that the boroughs are clustered around the same zipcodes. What I personally find somewhat confusing is that the zipcodes for Brooklyn and Queens overlap--why not stay consistent like the other boroughs? It is interesting to see that Staten Island does not have a lot of Chinese restaurants with high scores. Brooklyn and Queens seem to have some high score restaurants along with Manhattan. However, I personally find the best tasting Chinese restaurants to be in Flushing, where the score may not be as high. 
 
 ## Bar Chart 
-plotly bar chart by food category in manhattan
+I was curious to see in Manhattan, how many restaurants are in my favorite food categories, which are the following: Donut, Korean, Chinese, and American. (I have an addiction to McFlurries and Tuna Melt Sandwiches). Based off of this bar chart I see this: 
+
 ```{r}
 rest_inspec_tidy%>% 
   filter(boro=="MANHATTAN") %>% 
   count(cuisine_description) %>% 
   mutate(cuisine_description = fct_reorder(cuisine_description, n)) %>% 
-  plot_ly(x= ~cuisine_description, y= ~n, color = ~cuisine_description, type="bar")
+  plot_ly(x= ~cuisine_description, y= ~n, color = ~cuisine_description, type="bar") %>% layout(title="Number of Restaurants per Kelly's Favorite Food Categories in Manhattan ",
+         xaxis= list(title="Cuisine Description"), yaxis=list(title="Count"))
 ```
-We can see here that among the 4 cuisine categories, American is the most popular in Manhattan. 
+We can see here that among the 4 cuisine categories, American is the most popular in Manhattan. I wonder how many are diners? I guess we'll never know unless we do further investigation... (until next homework assignment).
 
 # box plots
-* distribution by grade per cuisine category
+From here we can see that American restaurants tend to be of higher score when they have not been graded (as we can see form the outliers). The ones I find interesting is the donut category--especially the one that was in category C but with a low score. Shouldn't lower score correlate with higher grade? So what is with that restaurant? I suppose more yelp reviews need to be done. 
 ```{r}
 box_ggplot=
   rest_inspec_tidy%>% 
   mutate(grade = fct_reorder(grade, score)) %>% 
-  ggplot(aes(x=grade, y=score, fill= cuisine_description)) +
-  geom_boxplot()+
-  theme_classic () +
-  theme(axis.text.x = element_text(angle=90, hjust=1))
+  plot_ly(x=~grade, y=~score, color=~cuisine_description, type = "box")%>% 
+  layout(boxmode = "group") %>% 
+  layout(title = "Distribution of Grade and Score per Cuisine Category in NYC", xaxis=list(title="Restaurant Grade"), yaxis=list(title="Score"))
 
 ggplotly(box_ggplot)
 ```
 
-
+If interested, you can access all of these here on my [dashboard](dashboard.html)
 
