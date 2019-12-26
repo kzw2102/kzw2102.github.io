@@ -17,6 +17,8 @@ navbar:
           href: dashboard.html
         - text: "Code and Explanation"
           href: plotly_problem2.html
+    - text: "Cockroaches and Asthma in NYC "
+      href: https://prisrinivasan.github.io/p8105_final/
       
 output:
   html_document:

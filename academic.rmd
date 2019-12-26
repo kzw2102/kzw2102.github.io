@@ -28,10 +28,10 @@ kzw2102@columbia.edu|[linkedin](https://www.linkedin.com/in/kellyzwang/)
 ### University of Botswana | Gaborone, Botswana
 **Study Abroad ** | Summer 2016
 *Coursework: Setswana Language, Pre-Professional Health Care, Community Practicum*
+<br><br>
 
----
 ## Research Experience 
-### Sergievsky Center/Taub Institute: Columbia University Medical Center** | New York, NY
+### Sergievsky Center/Taub Institute: Columbia University Medical Center | New York, NY
 *Graduate Research Assistant/Data Analyst* | Mar 2019 - Present 
 
   * Investigate the association between psychosocial factors and its role on longevity on a cohort of individuals with Down Syndrome, ages 30 and older by reviewing datasets consisting of over 600 participants
@@ -46,18 +46,21 @@ kzw2102@columbia.edu|[linkedin](https://www.linkedin.com/in/kellyzwang/)
   
 ### Massachusetts Advocates for Nursing Home Reform | Medford, MA 
 *Relaunch Intern* | December 2016 - December 2017
+
   * Supervised production of Crowdrise fundraising campaign to preserve organization; researched supporting evidence for campaign video script, created donation page, and executed on-campus event 
   * Analyzed qualitative statistical data on quality of care of 35 Massachusetts nursing homes for board presentation 
   * Conducted and analyzed responses from survey dataset of 250 Massachusetts baby boomers’ reactions to nursing homes in Massachusetts for PR Newswire Article
+<br><br>
 
----
 ## Leadership Experience 
-**Columbia University: Office of Educational Programming** | New York, NY
+**Columbia University: Office of Educational Programs** | New York, NY
 *Graduate Teaching Assistant* 
+  
   * Analysis of Categorical Data | Statistical Computing with SAS | January 2020 - Present
   * Research Methods & Application: Quantitative Foundations | September 2019 - December 2019 
   
----
+<br><br>
+
 ## Skills
 
   * Proficient in Microsoft Office Programs (MS Word, PowerPoint, Excel, Outlook)
