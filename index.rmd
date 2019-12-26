@@ -24,4 +24,4 @@ To learn more about my professional and academic experiences, here is my [linked
 As part of the Data Science I coursework, me and my fellow colleagues--Hannah Bowlin, Lorraine Kwok, Priyanka Srinivasan, and Alice Tivarovsky--created a website to analyze the association on asthma prevalence and cockroach prevalence among children living in New York City. Here is the [link](https://prisrinivasan.github.io/p8105_final/)! 
 
 ## Fun facts about me
-If you are interested about *fun facts* about me, you can access it [here](about.html)
+If you are interested about *fun facts* about me, you can access it [here](about.html).

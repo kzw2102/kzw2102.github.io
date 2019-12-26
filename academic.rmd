@@ -31,20 +31,20 @@ kzw2102@columbia.edu|[linkedin](https://www.linkedin.com/in/kellyzwang/)
 
 ---
 ## Research Experience 
-**Sergievsky Center/Taub Institute: Columbia University Medical Center** | New York, NY
-*Graduate Research Assistant/Data Analyst*| Mar 2019 - Present 
+### Sergievsky Center/Taub Institute: Columbia University Medical Center** | New York, NY
+*Graduate Research Assistant/Data Analyst* | Mar 2019 - Present 
 
   * Investigate the association between psychosocial factors and its role on longevity on a cohort of individuals with Down Syndrome, ages 30 and older by reviewing datasets consisting of over 600 participants
   * Independently research health literature and journal publications to identify possible statistical methods
   * Utilized SAS for data cleaning, data manipulation, data transformation, and other statistical procedures
 
-**Global Healthy Living Foundation** |New York, NY
+### Global Healthy Living Foundation |New York, NY
 *Summer Research Fellow* | May 2019 - August 2019
 
   * Utilized statistical procedures in SAS for an abstract and poster presented at the 2019 PAINWEEK conference
   * Led creation of all the materials needed for the pilot focus group conducted for the Eugene Washington Award Diversifying, Expanding, and Tracking Patient Engagement in Arthritis Research including the protocol, slide deck, flyers, and Q&A form that was distributed to various Naturally Occurring Retirement Communities (NORCs) in New York City. 
   
-**Massachusetts Advocates for Nursing Home Reform** | Medford, MA 
+### Massachusetts Advocates for Nursing Home Reform | Medford, MA 
 *Relaunch Intern* | December 2016 - December 2017
   * Supervised production of Crowdrise fundraising campaign to preserve organization; researched supporting evidence for campaign video script, created donation page, and executed on-campus event 
   * Analyzed qualitative statistical data on quality of care of 35 Massachusetts nursing homes for board presentation 

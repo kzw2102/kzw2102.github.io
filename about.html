@@ -237,6 +237,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -265,6 +266,12 @@ $(document).ready(function () {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -367,11 +374,20 @@ div.tocify {
      
   </a>
 </li>
-<li>
-  <a href="plotly_problem2.html">Plotly</a>
-</li>
-<li>
-  <a href="dashboard.html">dashboard</a>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    NYC Restaurant Inspection
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="dashboard.html">dashboard</a>
+    </li>
+    <li>
+      <a href="plotly_problem2.html">Code and Explanation</a>
+    </li>
+  </ul>
 </li>
       </ul>
     </div><!--/.nav-collapse -->
@@ -394,10 +410,6 @@ div.tocify {
 <div id="what-do-i-do-during-my-free-time" class="section level2">
 <h2>What do I do during my free time</h2>
 <p>In my free time I like to do the following:</p>
-<div id="run" class="section level3">
-<h3>Run</h3>
-<p>My goal for 2019 was to run the Brooklyn Half– however I got hamstring tendonitis so now I’m building up again. Will continue to strive for more 5Ks and other races in the future. Here’s a crooked photo of me <img src="images/IMG_1280.JPG" /></p>
-</div>
 <div id="read-books" class="section level3">
 <h3>Read Books</h3>
 <p>I absolutely love reading. My 2019 Goodreads goal is to read 20 books. So far I have read 17 books as of October 29, 2019.</p>
@@ -407,8 +419,8 @@ div.tocify {
 </div>
 <div id="bullet-journaling" class="section level3">
 <h3>Bullet Journaling</h3>
-<p>I am a very crafty person and thoroughly enjoy bullet journaling. Here are some of my spreads that I’m quite content with.</p>
-<p><img src="images/bujo1.JPG" /> <img src="images/bujo2.JPG" /> <img src="images/bujo3.JPG" /></p>
+<p>I am a very crafty person and thoroughly enjoy bullet journaling. This is one of my favorite spreads from the summer.</p>
+<p><img src="images/bujo2.JPG" /></p>
 </div>
 </div>
 

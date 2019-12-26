@@ -1,5 +1,5 @@
 ---
-title: "Problem 2: Plotly"
+title: "Plotly Code and Explanation"
 output: 
   html_document:
     cold_folding: hide

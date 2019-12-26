@@ -11,10 +11,12 @@ navbar:
       href: http://github.com/kzw2102/
     - icon: fa-linkedin fa-lg
       href: https://www.linkedin.com/in/kellyzwang/
-    - text: "Plotly"
-      href: plotly_problem2.html
-    - text: "dashboard"
-      href: dashboard.html
+    - text: "NYC Restaurant Inspection"
+      menu:
+        - text: "dashboard"
+          href: dashboard.html
+        - text: "Code and Explanation"
+          href: plotly_problem2.html
       
 output:
   html_document:
