@@ -13,7 +13,7 @@ output:
 
 </center>
 
-I am a second year Master of Public Health student at Columbia University's Mailman School of Public Health in the Biostatistics department. My interest in Biostatistics stemmed from the fact that we need data in all aspect of public health, including in the rise of the aging population. I hope to use the various statistical methods I have learned and gained during my time at Columbia to pursue a career in data analysis among this population of interest. 
+I am a second year Master of Public Health student at Columbia University's Mailman School of Public Health in the Biostatistics department. My interest in Biostatistics stemmed from the fact that we need data in all aspects of public health, including in the rise of the aging population. I hope to use the various statistical methods I have learned and gained during my time at Columbia to pursue a career in data analysis among this population of interest. 
 
 To learn more about my professional and academic experiences, here is my [linkedin](https://www.linkedin.com/in/kellyzwang/) **profile** that is also up on the dashboard on the top of the page. You can see my resume and other professional experiences [here](academic.html).
 
