@@ -1,19 +1,27 @@
 ---
-title: "Kelly Wang, kzw2102"
+title: "Kelly Wang, MPH Candidate in Biostatistics"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
 
-## Life of Kelly Wang (or at least part of it)
-
+## Welcome to my website!
+<center>
+<br><br>
 <br><img src="images/Kelly.Wang copy.JPG" alt="Kelly" style="width:65%; border:10px solid"> <br>
 
-I am a second year Master of Public Health student at Columbia University's Mailman School of Public Health in the Biostatistics department. 
+</center>
 
-Here is my [linkedin](https://www.linkedin.com/in/kellyzwang/) **profile** that is also up on the dashboard on the top of the page.
+I am a second year Master of Public Health student at Columbia University's Mailman School of Public Health in the Biostatistics department. My interest in Biostatistics stemmed from the fact that we need data in all aspect of public health, including in the rise of the aging population. I hope to use the various statistical methods I have learned and gained during my time at Columbia to pursue a career in data analysis among this population of interest. 
 
-You can see my resume and other professional experiences [here](academic.html)
+To learn more about my professional and academic experiences, here is my [linkedin](https://www.linkedin.com/in/kellyzwang/) **profile** that is also up on the dashboard on the top of the page. You can see my resume and other professional experiences [here](academic.html).
 
+## Plotly and Flexdashboard
+[Here](dashboard.html) is a dashboard of NYC restaurant inspections using Plotly. To access my code and my reasoning behind each graph, click [here](plotly_problem2.html). 
+
+## Data Science Final Group Project 
+As part of the Data Science I coursework, me and my fellow colleagues--Hannah Bowlin, Lorraine Kwok, Priyanka Srinivasan, and Alice Tivarovsky--created a website to analyze the association on asthma prevalence and cockroach prevalence among children living in New York City. Here is the [link](https://prisrinivasan.github.io/p8105_final/)! 
+
+## Fun facts about me
 If you are interested about *fun facts* about me, you can access it [here](about.html)
